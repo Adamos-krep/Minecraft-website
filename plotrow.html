@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plotrow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/ressources/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="article-1">
+            <article>
+                <div class="player1-container">
+                    <header>
+                        <h1 id="Header">The Player: plotrow</h1>
+                    </header>
+                    <div class="paragrahs1-container">
+                <p>
+                    Minecraft, the beloved sandbox game, is a world of endless creativity and exploration. Among the millions of players that populate its virtual landscapes, one name shines bright: Plotrow. Known for their remarkable contributions to the Minecraft community, Plotrow has left an indelible mark on the game.
+                </p>
+
+                <img src="https://media.discordapp.net/attachments/1145412937025073152/1146155270062493787/image.png?width=608&height=422" alt="">
+
+                <p>
+                    Plotrow's journey began like that of many others – with a humble block and a vision. What sets them apart is their dedication to crafting immersive experiences within the game. From intricate builds that resemble architectural wonders to sprawling landscapes that tell stories of their own, Plotrow's creations are nothing short of inspiring.
+                </p>
+
+                <img src="https://media.discordapp.net/attachments/1145412937025073152/1146155270326722632/image.png?width=573&height=422" alt="">
+
+                <p>
+                    One of Plotrow's most notable achievements is the construction of a sprawling medieval city that seems to have sprung from the pages of history. Every corner of this virtual realm exudes attention to detail, as cobblestone pathways wind their way through bustling marketplaces, and towering castles stand as a testament to Plotrow's architectural prowess.
+                </p>
+
+                <img src="https://media.discordapp.net/attachments/1145412937025073152/1146155270607745034/image.png?width=1024&height=327" alt="">
+
+                <p>
+                    But Plotrow's impact isn't limited to impressive builds alone. They've also delved into the realm of redstone engineering, creating contraptions that seamlessly blend artistry and functionality. Their automated farms and intricate machinery are marvels of engineering, simplifying complex processes and allowing players to focus on the joys of exploration.
+                </p>
+
+                <img src="https://media.discordapp.net/attachments/1145412937025073152/1146155270976852030/image.png?width=809&height=422" alt="">
+
+                <p>
+                    What truly makes Plotrow stand out is their willingness to share their expertise. Whether through YouTube tutorials, livestreams, or written guides, Plotrow generously imparts their knowledge to the Minecraft community. Their passion for helping others has fostered a sense of camaraderie among players, enhancing the game's collaborative spirit.
+                </p>
+
+                <img src="https://media.discordapp.net/attachments/1145412937025073152/1146155271765381130/image.png?width=1024&height=398" alt="">
+
+                <p>
+                    In the ever-evolving world of Minecraft, players like Plotrow are the heartbeat of creativity and innovation. Through their dedication, they remind us that the game's potential is as boundless as the imagination itself. As we explore the pixels and blocks that make up our digital realms, we tip our virtual hats to the likes of Plotrow, whose contributions continue to shape and enrich the Minecraft universe.
+                </p>
+                </div>
+            </div>
+        </article>
+    </main>
+</section>
+
+<script>
+    const texts = document.querySelectorAll("p");
+    let player = "Plotrow";
+    let gameName = "Minecraft";
+
+    texts.forEach(element =>{
+        element.innerHTML = element.innerHTML.replace(player, `<span style="color: yellow;">${player}</span>`);
+    })
+
+    texts.forEach(element2 =>{
+        element2.innerHTML = element2.innerHTML.replace(gameName, `<mark style="color: black;background:aqua;font-weight:bold;">${gameName}</mark>`);
+    })
+
+    const header2 = document.querySelector("#Header");
+    window.onscroll = function(){onscrollFunction2()};
+    
+    function onscrollFunction2(){
+        if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+            header2.style.padding = "20px";
+            header2.style.fontSize = "2vw";
+        }else{
+            header2.style.padding = "0.6em";
+            header2.style.fontSize = "5vw";
+        }
+}
+</script>
+</body>
+</html>

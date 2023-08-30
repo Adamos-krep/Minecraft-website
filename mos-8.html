@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOS-8</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/ressources/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="article-1">
+            <article>
+                <div class="player1-container">
+                    <header>
+                        <h1 id="Header">The Player: MOS-8</h1>
+                    </header>
+                    <div class="paragrahs1-container">
+                <p>
+                    In the expansive world of Minecraft, where creativity knows no bounds and adventures unfold with every block placed, one player has stood out with their exceptional skills and imagination. Allow us to introduce you to MOS-8, an avid Minecraft player whose virtual creations have captured the attention of fellow gamers and enthusiasts.
+                </p>
+
+                <img src="/ressources/image (1).png" alt="Adamos base from Up" title="Adamos base from Up">
+
+                <p>
+                    MOS-8, known by their in-game moniker, has been weaving digital wonders within the pixelated realm for years. With a passion for architectural design and a keen eye for detail, they have sculpted entire cities, towering castles, and intricate landscapes that rival the grandeur of real-world masterpieces.
+                </p>
+
+                <img src="/ressources/image (2).png" alt="Adamos base from ground" title="Adamos base from ground">
+
+                <p>
+                    What sets MOS-8 apart is their dedication to not only crafting visually stunning environments but also imbuing them with immersive storytelling. Wander through the cobblestone streets of their medieval town, and you'll find hidden lore etched into every stone and timber. Venture into their sprawling underground caverns, and you'll uncover mysteries waiting to be unraveled.
+                </p>
+
+                <img src="/ressources/image (3).png" alt="">
+
+                <p>
+                    Beyond the virtual realm, MOS-8 has also extended their creativity to the Minecraft modding community. Their innovative mods have introduced new gameplay mechanics and brought fresh life to the game, earning them respect among their peers and leaving a lasting impact on the Minecraft universe.
+                </p>
+
+                <img src="/ressources/image (4).png" alt="Adamos lake" title="Adamos lake">
+
+                <p>
+                    MOS-8's influence isn't confined to their digital creations alone. They've nurtured a vibrant community of fellow players, sharing tutorials, tips, and insights that have helped aspiring builders and adventurers elevate their own Minecraft experiences.
+                </p>
+
+                <p>
+                    In a world where imagination is the only limit, MOS-8 has demonstrated that innovation and creativity can thrive boundlessly. Through their captivating builds, engaging narratives, and contributions to the community, MOS-8 has etched their name into the annals of Minecraft history, inspiring players old and new to continue pushing the boundaries of what's possible within this endlessly enchanting game.
+                </p>
+                </div>
+            </div>
+        </article>
+    </main>
+</section>
+<footer>
+
+</footer>
+
+<script>
+    const texts = document.querySelectorAll("p");
+    let player = "MOS-8";
+    let gameName = "Minecraft";
+
+    texts.forEach(element =>{
+        element.innerHTML = element.innerHTML.replace(player, `<span style="color: yellow;">${player}</span>`);
+    })
+
+    texts.forEach(element2 =>{
+        element2.innerHTML = element2.innerHTML.replace(gameName, `<mark style="color: black;background:aqua;font-weight:bold;">${gameName}</mark>`);
+    })
+
+    const header2 = document.querySelector("#Header");
+    window.onscroll = function(){onscrollFunction2()};
+    
+    function onscrollFunction2(){
+        if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+            header2.style.padding = "20px";
+            header2.style.fontSize = "2vw";
+        }else{
+            header2.style.padding = "0.6em";
+            header2.style.fontSize = "5vw";
+        }
+}
+</script>
+</body>
+</html>
